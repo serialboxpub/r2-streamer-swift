@@ -64,7 +64,7 @@ final public class EpubParser: PublicationParser {
     static public func parse(at url: URL) throws -> (PubBox, PubParsingCallback) {
         let path = url.path
         // Generate the `Container` for `fileAtPath`
-        var container = try generateContainerFrom(fileAtPath: path)
+        let container = try generateContainerFrom(fileAtPath: path)
 
         // Parse OPF file (Metadata, ReadingOrder, Resource).
         var publication = try OPFParser(container: container).parsePublication()

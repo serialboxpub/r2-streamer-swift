@@ -3,12 +3,16 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 46;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		03C3CC6A222DBD9E00A01731 /* R2Shared.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03C3CC69222DBD9E00A01731 /* R2Shared.framework */; };
 		59501E201E2FB2AD00D1B4BF /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 59501E1F1E2FB2AD00D1B4BF /* libz.tbd */; };
+		7A80D8D62641BA8B007F2EF1 /* R2Shared.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A80D8D52641BA8B007F2EF1 /* R2Shared.xcframework */; };
+		7A80D8DD2641BAC5007F2EF1 /* CryptoSwift.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A80D8D92641BAC5007F2EF1 /* CryptoSwift.xcframework */; };
+		7A80D8DF2641BAC5007F2EF1 /* GCDWebServer.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A80D8DA2641BAC5007F2EF1 /* GCDWebServer.xcframework */; };
+		7A80D8E12641BAC5007F2EF1 /* Minizip.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A80D8DB2641BAC5007F2EF1 /* Minizip.xcframework */; };
+		7A80D8E32641BAC5007F2EF1 /* Fuzi.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A80D8DC2641BAC5007F2EF1 /* Fuzi.xcframework */; };
 		CA130D44229D4245000A627C /* Seekable.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA130D00229D4245000A627C /* Seekable.swift */; };
 		CA130D45229D4245000A627C /* FileInputStream.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA130D01229D4245000A627C /* FileInputStream.swift */; };
 		CA130D46229D4245000A627C /* DataInputStream.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA130D02229D4245000A627C /* DataInputStream.swift */; };
@@ -82,6 +86,11 @@
 		03C3CC69222DBD9E00A01731 /* R2Shared.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = R2Shared.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		59501DCD1E2FB0D700D1B4BF /* R2Streamer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = R2Streamer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		59501E1F1E2FB2AD00D1B4BF /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		7A80D8D52641BA8B007F2EF1 /* R2Shared.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = R2Shared.xcframework; path = Carthage/Build/R2Shared.xcframework; sourceTree = "<group>"; };
+		7A80D8D92641BAC5007F2EF1 /* CryptoSwift.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = CryptoSwift.xcframework; path = Carthage/Build/CryptoSwift.xcframework; sourceTree = "<group>"; };
+		7A80D8DA2641BAC5007F2EF1 /* GCDWebServer.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = GCDWebServer.xcframework; path = Carthage/Build/GCDWebServer.xcframework; sourceTree = "<group>"; };
+		7A80D8DB2641BAC5007F2EF1 /* Minizip.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = Minizip.xcframework; path = Carthage/Build/Minizip.xcframework; sourceTree = "<group>"; };
+		7A80D8DC2641BAC5007F2EF1 /* Fuzi.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = Fuzi.xcframework; path = Carthage/Build/Fuzi.xcframework; sourceTree = "<group>"; };
 		CA130D00229D4245000A627C /* Seekable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Seekable.swift; sourceTree = "<group>"; };
 		CA130D01229D4245000A627C /* FileInputStream.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FileInputStream.swift; sourceTree = "<group>"; };
 		CA130D02229D4245000A627C /* DataInputStream.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataInputStream.swift; sourceTree = "<group>"; };
@@ -148,8 +157,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7A80D8DF2641BAC5007F2EF1 /* GCDWebServer.xcframework in Frameworks */,
+				7A80D8DD2641BAC5007F2EF1 /* CryptoSwift.xcframework in Frameworks */,
 				CA94291822BCE42500305CDB /* CoreServices.framework in Frameworks */,
-				03C3CC6A222DBD9E00A01731 /* R2Shared.framework in Frameworks */,
+				7A80D8E32641BAC5007F2EF1 /* Fuzi.xcframework in Frameworks */,
+				7A80D8D62641BA8B007F2EF1 /* R2Shared.xcframework in Frameworks */,
+				7A80D8E12641BAC5007F2EF1 /* Minizip.xcframework in Frameworks */,
 				59501E201E2FB2AD00D1B4BF /* libz.tbd in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -187,6 +200,11 @@
 		59501E171E2FB1F500D1B4BF /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				7A80D8D92641BAC5007F2EF1 /* CryptoSwift.xcframework */,
+				7A80D8DC2641BAC5007F2EF1 /* Fuzi.xcframework */,
+				7A80D8DA2641BAC5007F2EF1 /* GCDWebServer.xcframework */,
+				7A80D8DB2641BAC5007F2EF1 /* Minizip.xcframework */,
+				7A80D8D52641BA8B007F2EF1 /* R2Shared.xcframework */,
 				CA94291722BCE42500305CDB /* CoreServices.framework */,
 				03C3CC69222DBD9E00A01731 /* R2Shared.framework */,
 				59501E1F1E2FB2AD00D1B4BF /* libz.tbd */,
@@ -700,8 +718,9 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_INCLUDE_PATHS = "$(SRCROOT)/Sources/ZipArchive/minizip/**";
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
@@ -713,7 +732,6 @@
 		59501DE21E2FB0D700D1B4BF /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_CODE_COVERAGE = NO;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -730,7 +748,10 @@
 				INFOPLIST_FILE = "r2-streamer-swift/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				OTHER_LDFLAGS = "-lxml2";
 				PRODUCT_BUNDLE_IDENTIFIER = org.readium.R2Streamer;
 				PRODUCT_NAME = R2Streamer;
@@ -743,7 +764,6 @@
 		59501DE31E2FB0D700D1B4BF /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_CODE_COVERAGE = NO;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -761,7 +781,10 @@
 				INFOPLIST_FILE = "r2-streamer-swift/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				OTHER_LDFLAGS = "-lxml2";
 				PRODUCT_BUNDLE_IDENTIFIER = org.readium.R2Streamer;
 				PRODUCT_NAME = R2Streamer;
@@ -787,7 +810,12 @@
 				HEADER_SEARCH_PATHS = $SDKROOT/usr/include/libxml2;
 				INFOPLIST_FILE = "r2-streamer-swiftTests/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks $(PROJECT_DIR)/Carthage/Build/iOS";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = org.readium.R2StreamerTests;
@@ -813,7 +841,12 @@
 				HEADER_SEARCH_PATHS = $SDKROOT/usr/include/libxml2;
 				INFOPLIST_FILE = "r2-streamer-swiftTests/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks $(PROJECT_DIR)/Carthage/Build/iOS";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				MTL_FAST_MATH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = org.readium.R2StreamerTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
