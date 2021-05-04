@@ -1,4 +1,4 @@
-github "readium/r2-shared-swift" == 1.4.3
+github "serialboxpub/r2-shared-swift" "feature/v1_4_3_customized"
 github "dexman/Minizip" == 1.4.0
 github "cezheng/Fuzi" == 3.1.1
 github "krzyzanowskim/CryptoSwift" == 1.2.0
